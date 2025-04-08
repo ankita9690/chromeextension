@@ -25,7 +25,7 @@ function handleSwitch(url) {
 }
 
 function sendToBackend(domain, seconds) {
-  fetch("https://your-render-api.onrender.com/api/report", {
+  fetch("https://chromeextension-5g64.onrender.com/api/report", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ domain, seconds }),
