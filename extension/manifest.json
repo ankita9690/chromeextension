@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "FocusTrackr",
+    "version": "1.0",
+    "description": "Track time, block distractions, and stay focused.",
+    "permissions": ["storage", "tabs", "alarms", "webNavigation"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "host_permissions": ["<all_urls>"]
+  }
+  
