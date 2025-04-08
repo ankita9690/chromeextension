@@ -2,19 +2,15 @@
 
 // const reportSchema = new mongoose.Schema({
 //   domain: String,
-//   seconds: Number,
-//   timestamp: {
-//     type: Date,
-//     default: Date.now,
-//   },
-// });
+//   timeSpent: Number
+// }, { timestamps: true });
 
 // module.exports = mongoose.model("Report", reportSchema);
 const mongoose = require("mongoose");
 
 const reportSchema = new mongoose.Schema({
-  domain: String,
-  timeSpent: Number
+  domain: { type: String, required: true },
+  timeSpent: { type: Number, required: true }
 }, { timestamps: true });
 
 module.exports = mongoose.model("Report", reportSchema);
